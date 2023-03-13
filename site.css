@@ -1,0 +1,40 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+.cabeçalho {
+    padding: 5% 0% 0% 5%;
+}
+
+.menu {
+    display: flex;
+    gap: 100px;
+}
+
+.topico {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    color: #00ff00;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+h1 {
+    padding: 10% 0% 0% 15%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cor {
+    color: #00ff00;
+}
+
+.fotoprincipal {
+    border-radius: 5%;
+}
