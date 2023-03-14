@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -10,12 +12,23 @@ body {
 }
 
 .cabeçalho {
-    padding: 5% 0% 0% 5%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: #111111;
+    padding: 0% 0% 0% 5%;
 }
 
 .menu {
     display: flex;
-    gap: 100px;
+    gap: 30vh;
+}
+
+.logo {
+    position: relative;
+    top: 0.3vh;
+    padding: 0% 0% 0% 3%;
+
 }
 
 .topico {
@@ -24,17 +37,66 @@ body {
     color: #00ff00;
     font-size: 24px;
     text-decoration: none;
+    position: relative;
+    top: 5vh;
+    left: 5vh;
+}
+
+.conteudo {
+    margin: 18% 18% 0% 15%;
+    display: flex;
+    gap: 9vh;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
-    padding: 10% 0% 0% 15%;
     font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.16cm;
 }
 
 .cor {
     color: #00ff00;
 }
 
+.textoP {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.10cm;
+}
+
 .fotoprincipal {
+    width: 60vh;
+    height: 45vh;
     border-radius: 5%;
+}
+
+#sobre {
+    margin: 20%;
+}
+
+.sobreNos {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    color: #00ff00;;
+}
+
+.textoSobreNos {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.09cm;
+}
+
+#Contatos {
+    margin: 20%;
+}
+
+.contato {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    color: #00ff00;
 }
