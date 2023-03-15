@@ -18,19 +18,19 @@
 
     <header class="cabeçalho">
 
-        <nav class="menu">
-
-            <a class="logo"><img src="imagens/M7.png" alt="Logo M7Dev"></a>
-            <a class="topico" href="">Home</a>
-            <a class="topico" href="">Sobre</a>
-            <a class="topico" href="">Contatos</a>
-
+        <nav>
+            <ul class="menu">
+                <img src="imagens/M7.png" alt="Logo M7Dev">
+                <li><a class="topico" href="#home">Home</a></li>
+                <li><a class="topico" href="#sobre">Sobre</a></li>
+                <li><a class="topico" href="#contatos">Contatos</a></li>
+            
+            </ul>
         </nav>
 
     </header>
     
-    <div class="conteudo">
-
+    <div id="home">
         <section class="textos">
                 <h1>Eleve seu negocio digital a outro nível <strong class="cor">com um Front-End de qualidade !</strong></h1>
                 <p class="textoP">Olá ! Somos a <strong>M7Dev</strong>, empresa desenvolvedora Front-End com especialidade em HTML, CSS e JAVASCRIPT. Ajudamos pequenos negocios e designers a colocarem em prática boas ideias. Tem alguma ideia ou quer expandir seu negocio  ?  Vamos coversar ?</p>
@@ -50,12 +50,25 @@
             <br><br><strong>Em breve</strong> teremos em nosso site uma seção exclusiva para demonstrar nosso trabalho desenvolvido de forma profissional, para que todos possam ter exemplos e possam avaliar nosso trabalho.
         </p>
 
-    </div id="Contatos">
-        <h2 class="contato">Contatos</h2>
-    
-    <div>
-
     </div>
-
+    <div id="contatos">
+        <h2 class="contato">Contatos</h2>
+        <p class="textoContato">Contate-nos e acesse nossas redes.</p>
+        <nav class="botoes">
+            <a class="botao" href="https://www.linkedin.com/in/matheus-lima-c%C3%A2ndido-7b7a1b192/">
+                <img src="imagens/linkedin.png">LinkedIn
+            </a>
+            <a class="botao" href="https://github.com/Matheuslc7">
+                <img src="imagens/github.png">GitHub
+            </a>
+            <a class="botao" href="https://www.instagram.com/matheuslc7/">
+                <img src="imagens/instagram.png">Instagram
+            </a>
+            <a class="botao" href="https://wa.me/5585996762002?text=Ol%C3%A1%2C+vim+pelo+Site+M7Dev.">
+                <img src="imagens/wpp.png">WhatsApp
+            </a>
+        </nav>
+    </div>
+    <script src="site.js"></script>
 </body>
 </html>

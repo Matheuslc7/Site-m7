@@ -22,6 +22,7 @@ body {
 .menu {
     display: flex;
     gap: 30vh;
+    list-style: none;
 }
 
 .logo {
@@ -42,7 +43,7 @@ body {
     left: 5vh;
 }
 
-.conteudo {
+#home {
     margin: 18% 18% 0% 15%;
     display: flex;
     gap: 9vh;
@@ -90,8 +91,9 @@ h1 {
     letter-spacing: 0.09cm;
 }
 
-#Contatos {
+#contatos {
     margin: 20%;
+
 }
 
 .contato {
@@ -99,4 +101,43 @@ h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 35px;
     color: #00ff00;
+}
+
+.textoContato {
+    padding: 1%;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.09cm;
+}
+
+.botoes {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    border: 2px solid #00ff00;
+    color: #f6f6f6;
+    text-decoration: none;
+    width: 378px;
+    padding: 21.5px 0;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 15px;
+}
+
+.botao:hover {
+    background-color: #272727;
+    color: #00a300;
 }
