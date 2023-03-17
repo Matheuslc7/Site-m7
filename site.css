@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
+:root {
+    --cor-principal: #000000;
+    --cor-secundária: #00ff00;
+    --cor-terciária: #f6f6f6;
+
+    --fonte-principal: 'Orbitron', sans-serif;
+    --fonte-secundaria: 'Space Grotesk', sans-serif;
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -7,70 +16,73 @@
 
 body {
     box-sizing: border-box;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciária);
 }
 
 .cabeçalho {
     position: fixed;
     top: 0%;
     width: 100%;
+    height: 15%;
     background-color: #111111;
     padding: 0% 0% 0% 5%;
 }
 
 .menu {
+    width: 100%;
     display: flex;
-    gap: 30vh;
+    align-items: center;
+    gap: 15%;
     list-style: none;
 }
 
 .logo {
-    position: relative;
-    top: 0.3vh;
-    padding: 0% 0% 0% 3%;
+    width: 9%;
+    padding-top: 1%;
 
 }
 
 .topico {
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
-    color: #00ff00;
-    font-size: 24px;
+    color: var(--cor-secundária);
+    font-size: 1.5rem;
     text-decoration: none;
-    position: relative;
-    top: 5vh;
-    left: 5vh;
+
 }
 
 #home {
     margin: 18% 18% 0% 15%;
     display: flex;
-    gap: 9vh;
+    gap: 82px;
     align-items: center;
     justify-content: space-between;
 }
 
+.textos {
+    width: 50%;
+}
+
+.fotoprincipal {
+    width: 50%;    
+    border-radius: 5%;
+}
+
 h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 35px;
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
     letter-spacing: 0.16cm;
 }
 
 .cor {
-    color: #00ff00;
+    color: var(--cor-secundária);
 }
 
 .textoP {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
     letter-spacing: 0.10cm;
-}
-
-.fotoprincipal {
-    width: 60vh;
-    height: 45vh;
-    border-radius: 5%;
 }
 
 #sobre {
@@ -79,15 +91,15 @@ h1 {
 
 .sobreNos {
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 35px;
-    color: #00ff00;;
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    color: var(--cor-secundária);
 }
 
 .textoSobreNos {
     text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 22px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.37rem;
     letter-spacing: 0.09cm;
 }
 
@@ -98,16 +110,16 @@ h1 {
 
 .contato {
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 35px;
-    color: #00ff00;
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    color: var(--cor-secundária);
 }
 
 .textoContato {
     padding: 1%;
     text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 22px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.37rem;
     letter-spacing: 0.09cm;
 }
 
@@ -117,27 +129,132 @@ h1 {
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .botao {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     text-align: center;
-    border: 2px solid #00ff00;
-    color: #f6f6f6;
+    border: 2px solid var(--cor-secundária);
+    color: var(--cor-terciária);
     text-decoration: none;
-    width: 378px;
-    padding: 21.5px 0;
-    font-size: 22px;
+    width: 50%;
+    padding: 1.37rem 0;
+    font-size: 1.37rem;
     font-weight: 600;
-    font-family: 'Space Grotesk', sans-serif;
-    border-radius: 15px;
+    font-family: var(--fonte-secundaria);
+    border-radius: 1rem;
 }
 
 .botao:hover {
     background-color: #272727;
     color: #00a300;
+}
+
+.rodaPe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    height: 17vh;
+    background-color: var(--cor-secundária);
+}
+
+.copyright {
+    margin-top: 1%;
+    width: 8%;
+}
+
+.textoCopyright {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    color: var(--cor-principal);
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1200px) {
+    .cabeçalho {
+        padding: 0% 0% 0% 1%;
+        height: auto;
+    }
+
+    .menu {
+        gap: 8%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home {
+        margin: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textos {
+        width: auto;
+    }
+
+    .topico {
+        font-size: 0.70rem;
+    }
+
+
+    .fotoprincipal {    
+        margin-top: 15%;
+        width: 80%;
+    }
+
+    #sobre {
+        margin: auto;
+    }
+
+    .sobreNos {
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    #contatos {
+        margin: auto;
+    }
+
+    .contato {
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    .textoContato {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .botoes {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .botao {
+        width: 70%;
+    }
+
+    .rodaPe {
+        height: 12vh;
+    }
+
+    .copyright {
+        margin-top: 3%;
+        width: 20%;
+    }
+
+    .textoCopyright {
+        font-size: 0.70rem;
+    }
 }
